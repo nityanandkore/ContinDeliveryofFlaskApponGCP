@@ -14,6 +14,13 @@ def name(value):
     val = {"value": value}
     return jsonify(val)
 
+
+@app.route('/bob')
+def bob():
+    val = {"value": "bob"}
+    return jsonify(val)
+
+
 @app.route('/html')
 def html():
     """Returns some custom HTML"""
